@@ -43,7 +43,7 @@ const sendMessage = async (token, channelId, content) => {
         headers: { 'Authorization': token }
       });
       console.log(`[x] Deleted from ${channelId}: ${json.content}`);
-    }, 300); // Auto-delete after 0.3 detik
+    }, 400); // Auto-delete after 0.4 detik
   } else {
     console.log(`[!] Failed to send to ${channelId}:`, json);
   }
